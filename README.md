@@ -105,5 +105,13 @@ Use this command to open chrome browser
 $ chromeu 'github.com'
 ```
 
+#### Open NetBeans
+You can open NetBeans IDE typing
+```shell
+$ netbeans
+```
 
 
+### Licence 
+
+MIT © [Willian Keller](https://github.com/williankeller/)

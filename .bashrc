@@ -26,7 +26,7 @@ open_chrome() {
 
 # Function to Open Chrome Browser on Private Mode.
 open_chrome_private() {
-	google-chrome -incognito
+  google-chrome -incognito
 }
 
 # Function to Open Chrome and Find String
@@ -49,6 +49,11 @@ chrome_url() {
   google-chrome --args "${query}"
 }
 
+# Function to Open NetBeans 
+beans() {
+  ~/netbeans-8.0.2/bin/netbeans
+}
+
 # Function to Custom Prompt with Current GIT Branch
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1) /'
@@ -62,20 +67,17 @@ alias gd='git difftool'
 alias glog='git log --pretty=oneline'
 alias gck='git checkout'
 alias gm='git merge'
-alias gc='git commit -v'
-alias gca='git commit -v -a'
+alias gc='git commit'
 alias gb='git branch'
-alias gba='git branch -a'
-alias puo='git push origin'
-alias plo='git pull origin'
 
-# Functions Alias
+# Custom Functions Alias
 alias ml=mysql_login
 alias ra=apache_restart
 alias chrome=open_chrome
 alias chromep=open_chrome_private
 alias chromef=chrome_find
 alias chromeu=chrome_url
+alias netbeans=beans
 
 # System Alias
 alias sagi='sudo apt-get install'

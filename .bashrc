@@ -9,6 +9,11 @@ GREEN="\[\033[0;32m\]"
 NO_COLOR="\[\033[0m\]"
 PS1="\n$GREEN\u@\h$NO_COLOR:\w\n$YELLOW\$(parse_git_branch)$NO_COLOR\$ "
 
+# Function to clear all content
+cls() {
+  clear
+}
+
 # Function to MySQL Connection.
 mysql_login() {
   mysql -u $MYSQL_USER -p$MYSQL_PASS
